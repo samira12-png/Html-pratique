@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+
+    <style>
+        .container{
+            border: 1px solid beige;
+            background-color: beige;
+            width: 80%;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 200px 1fr;
+        }
+        .mini_grid{
+            display: grid;
+            grid-template-columns: repeat(2,400px)
+        }
+        input[type="number"] {
+            width: 20px; /* Set the width as needed */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div>
+        <img src="../img/téléchargement.jpeg" alt="">
+        </div>
+        <div>
+            <h2>T-SHIRT GREEN A MENCHES COURTES HOMME</h2>
+            <div>
+                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star"></i>
+            </div>
+            <p style="text-align: center;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam fugiat dicta atque cupiditate quidem sequi, temporibus qui culpa. Similique odio laborum sapiente, deserunt quis aliquam unde magnam voluptates tempore sequi?</p>
+            <ul>
+                <li>Lorem, ipsum dolor.</li>
+                <li>Lorem, ipsum dolor.</li>
+                <li>Lorem, ipsum dolor.</li>
+                <li>Lorem, ipsum dolor.</li>
+                <li>Lorem, ipsum dolor.</li>
+                <li>Lorem, ipsum dolor.</li>
+            </ul>
+            <p>curent price : <span style="color: #eab805;"> 20.99€</span></p>
+            <div class="mini_grid">
+                <h6>Quantite:</h6>
+                <h6>Taille:</h6>
+                <input type="number" id="quantity" name="quantity" value="1">
+                <div><input type="radio" id="s"><label for="s">S</label>
+                    <input type="radio" id="m"><label for="m">M</label>
+                    <input type="radio" id="xl"><label for="xl">XL</label>
+                </div>
+            </div>
+            <br>
+            <button>ajouter au panier</button>
+        </div>
+    </div>
+</body>
+</html>

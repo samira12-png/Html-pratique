@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      position: relative;
+      background-color: #f0f0f0; /* Fallback background color */
+    }
+        body::before{
+            background: url(../img/E02.jpg) no-repeat center center fixed;
+            opacity:0.5;
+           
+        
+        }
+        .navbar{
+         display: flex;  
+         justify-content: space-around; 
+         align-items: center;
+        }
+        #button{
+            background-color: #f39c12;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 0 3px 3px 0;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        #input{
+            padding: 10px;
+            border: none;
+            width: 200px;
+            font-size: 16px;
+            background-color: transparent;
+
+        }
+        .search{
+            border: #f39c12 1px solid;
+        }
+        a{
+            text-decoration: none;
+            color: #ffffff;
+            padding: 0px 25px;
+
+        }
+        a:hover{
+            color:#f39c12;
+        }
+        #logo, #chColor{
+            color: #f39c12;
+            font-size:35px ;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        h1{
+            font-size: 60px;
+            padding: 15px;
+        }
+        pre{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        #btn2{
+            background-color: #f39c12;
+            border: none;
+            color: white;
+            padding: 10px 50px;
+            margin-left: 25px;
+            border-radius: 0 3px 3px 0;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .sec1{
+            padding:0px 45px;
+        }
+        .sec2{
+            border: 1px solid black;
+            width:320px;
+            background-color: rgb(0, 0, 0,0.6)  ;
+            border-radius: 10px;
+            margin-right: 55px;
+            
+        }
+        h3{
+            border: 1px solid rgb(255, 255, 255);
+            background-color: #ffffff;
+            color: #f39c12;
+            padding:8px 15px;
+            text-align: center;
+            width: 70%;
+            margin: 0 auto;
+            border-radius: 10px;
+            margin: 15px;
+        }
+        .main{
+            display: flex;
+            justify-content: space-between;
+        }
+        .sec2>input{
+            background-color: transparent;
+            border: none;
+            border-bottom:solid #f39c12 2px ;
+            padding: 18px;
+            width: 70%;
+            margin-left:15px;
+        }
+        #link{
+            color: #f39c12;
+        }
+        #para{
+            color: #ffffff;
+            text-align: center;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            margin-bottom: 90px;
+        }
+        #minipara{
+            color: #ffffff;
+            text-align: center;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <h2 id="logo">PraRoz</h2>
+            <div>
+                <a href="">HOME</a>
+                <a href="">ABOUT</a>
+                <a href="">SERVICE</a>
+                <a href="">DESIGN</a>
+                <a href="">CONTACT</a>
+            </div>
+            <div class="search">
+                <input id="input" type="text" placeholder="Type to search">
+                <button id="button">Search</button>
+            </div>
+        </div>
+        <div class="main">
+            <div class="sec1">
+
+            <h1>Web Design & <br>
+           <span id="chColor"> Development</span> <br>
+            Courses</h1>
+            <pre>
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+    Magni perspiciatis impedit doloremque adipisci reprehenderit
+    hic eum in neque, doloribus accusamus corrupti. Accusantium 
+    exercitationem distinctio itaque expedita molestias, omnis eum 
+    aliquid.
+            </pre>
+            <button id="btn2">JOIN US</button>
+             </div>
+             <div class="sec2">
+                <h3>Login Here</h3>
+                <input type="email" placeholder="Entrer Email Here"><br>
+                <input type="password" placeholder="Entrer Password Here">
+                <button id="btn2" style="margin-top: 25px;width: 80%;">Login</button>
+                <p id=para>Don't have an account? <br>
+                    <a href="" id="link">Sign up</a>Here</p>
+                <p id="minipara"><small>Log in with</small></p>
+
+             </div>
+        </div>
+    </div>
+</body>
+</html>
